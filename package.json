@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-multiselect-neoli",
-  "version": "0.9.13",
+  "version": "0.9.31",
   "description": "JQuery multiselect plugin based on Twitter Bootstrap.",
   "main": "dist/js/bootstrap-multiselect.js",
   "directories": {
