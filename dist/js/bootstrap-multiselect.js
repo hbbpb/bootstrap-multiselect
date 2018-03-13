@@ -898,13 +898,15 @@
                     $(element).toggle(showElement).toggleClass('filter-hidden', !showElement);
 
                     //add by Pengbo Li
-                    var checkBox = $('input[type=\'checkbox\']', element);
-                    if (checkBox.length) {
-                      needUpdate = true;
-                      checkBox.prop("checked", showElement);
-                      var value = checkBox.val();
-                      var $option = this.getOptionByValue(value);
-                      $option.prop('selected', showElement);
+                    if(!showElement) {
+                      var checkBox = $('input[type=\'checkbox\']', element);
+                      if (checkBox.length) {
+                        needUpdate = true;
+                        checkBox.prop("checked", showElement);
+                        var value = checkBox.val();
+                        var $option = this.getOptionByValue(value);
+                        $option.prop('selected', showElement);
+                      }
                     }
 
                     // Differentiate groups and group items.
